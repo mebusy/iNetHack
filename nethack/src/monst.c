@@ -195,7 +195,7 @@ NEARDATA struct permonst mons[] = {
 /*
  * dogs & other canines
  */
-    MON("jackal", S_DOG,
+    MON("jackal", S_DOG,   // 12
 	LVL(0, 12, 7, 0, 0), (G_GENO|G_SGROUP|3),
 	A(ATTK(AT_BITE, AD_PHYS, 1, 2),
 	  NO_ATTK, NO_ATTK, NO_ATTK, NO_ATTK, NO_ATTK),
@@ -312,7 +312,7 @@ NEARDATA struct permonst mons[] = {
 /*
  * eyes
  */
-    MON("gas spore", S_EYE,
+    MON("gas spore", S_EYE,  // 28
 	LVL(1, 3, 10, 0, 0), (G_NOCORPSE|G_GENO|1),
 	A(ATTK(AT_BOOM, AD_PHYS, 4, 6), NO_ATTK, NO_ATTK,
 	  NO_ATTK, NO_ATTK, NO_ATTK),
@@ -566,7 +566,7 @@ NEARDATA struct permonst mons[] = {
 /*
  * kobolds
  */
-    MON("kobold", S_KOBOLD,
+    MON("kobold", S_KOBOLD,    // 60
 	LVL(0, 6, 10, 0, -2), (G_GENO|1),
 	A(ATTK(AT_WEAP, AD_PHYS, 1, 4),
 	  NO_ATTK, NO_ATTK, NO_ATTK, NO_ATTK, NO_ATTK),
@@ -658,7 +658,7 @@ NEARDATA struct permonst mons[] = {
 /*
  * orcs
  */
-    MON("goblin", S_ORC,
+    MON("goblin", S_ORC,  // 71
 	LVL(0, 6, 10, 0, -3), (G_GENO|2),
 	A(ATTK(AT_WEAP, AD_PHYS, 1, 4),
 	  NO_ATTK, NO_ATTK, NO_ATTK, NO_ATTK, NO_ATTK),
@@ -674,7 +674,7 @@ NEARDATA struct permonst mons[] = {
 	M3_INFRAVISIBLE|M3_INFRAVISION, CLR_BROWN),
 	/* plain "orc" for zombie corpses only; not created at random
 	 */
-    MON("orc", S_ORC,
+    MON("orc", S_ORC,  // 73
 	LVL(1, 9, 10, 0, -3), (G_GENO|G_NOGEN|G_LGROUP),
 	A(ATTK(AT_WEAP, AD_PHYS, 1, 8),
 	  NO_ATTK, NO_ATTK, NO_ATTK, NO_ATTK, NO_ATTK),
@@ -795,7 +795,7 @@ NEARDATA struct permonst mons[] = {
 /*
  * rodents
  */
-    MON("sewer rat", S_RODENT,
+    MON("sewer rat", S_RODENT,   // 89
 	LVL(0, 12, 7, 0, 0), (G_GENO|G_SGROUP|1),
 	A(ATTK(AT_BITE, AD_PHYS, 1, 3),
 	  NO_ATTK, NO_ATTK, NO_ATTK, NO_ATTK, NO_ATTK),
@@ -934,7 +934,7 @@ NEARDATA struct permonst mons[] = {
 /*
  * vortices
  */
-    MON("fog cloud", S_VORTEX,
+    MON("fog cloud", S_VORTEX,  //107
 	LVL(3, 1, 0, 0, 0), (G_GENO|G_NOCORPSE|2),
 	A(ATTK(AT_ENGL, AD_PHYS, 1, 6),
 	  NO_ATTK, NO_ATTK, NO_ATTK, NO_ATTK, NO_ATTK),
@@ -1883,7 +1883,7 @@ struct permonst _mons2[] = {
 /*
  * Snakes
  */
-    MON("garter snake", S_SNAKE,
+    MON("garter snake", S_SNAKE,  // 215
 	LVL(1, 8, 8, 0, 0), (G_LGROUP|G_GENO|1),
 	A(ATTK(AT_BITE, AD_PHYS, 1, 2),
 	  NO_ATTK, NO_ATTK, NO_ATTK, NO_ATTK, NO_ATTK),
@@ -1937,7 +1937,7 @@ struct permonst _mons2[] = {
 /*
  * Trolls
  */
-    MON("troll", S_TROLL,
+    MON("troll", S_TROLL,  // 221
 	LVL(7, 12, 4, 0, -3), (G_GENO|2),
 	A(ATTK(AT_WEAP, AD_PHYS, 4, 2), ATTK(AT_CLAW, AD_PHYS, 4, 2),
 	  ATTK(AT_BITE, AD_PHYS, 2, 6), NO_ATTK, NO_ATTK, NO_ATTK),
@@ -1980,7 +1980,7 @@ struct permonst _mons2[] = {
 /*
  * Umber hulk
  */
-    MON("umber hulk", S_UMBER,
+    MON("umber hulk", S_UMBER, // 226
 	LVL(9, 6, 2, 25, 0), (G_GENO|2),
 	A(ATTK(AT_CLAW, AD_PHYS, 3, 4), ATTK(AT_CLAW, AD_PHYS, 3, 4),
 	  ATTK(AT_BITE, AD_PHYS, 2, 5), ATTK(AT_GAZE, AD_CONF, 0, 0),
@@ -1990,7 +1990,7 @@ struct permonst _mons2[] = {
 /*
  * Vampires
  */
-    MON("vampire", S_VAMPIRE,
+    MON("vampire", S_VAMPIRE,  // 227
 	LVL(10, 12, 1, 25, -8), (G_GENO|G_NOCORPSE|1),
 	A(ATTK(AT_CLAW, AD_PHYS, 1, 6), ATTK(AT_BITE, AD_DRLI, 1, 6),
 	  NO_ATTK, NO_ATTK, NO_ATTK, NO_ATTK),
@@ -2066,7 +2066,7 @@ struct permonst _mons2[] = {
 /*
  * Apelike beasts
  */
-    MON("monkey", S_YETI,
+    MON("monkey", S_YETI,  // 235
 	LVL(2, 12, 6, 0, 0), (G_GENO|1),
 	A(ATTK(AT_CLAW, AD_SITM, 0, 0), ATTK(AT_BITE, AD_PHYS, 1, 3),
 	  NO_ATTK, NO_ATTK, NO_ATTK, NO_ATTK),
@@ -2796,7 +2796,7 @@ struct permonst _mons2[] = {
 /*
  * sea monsters
  */
-    MON("jellyfish", S_EEL,
+    MON("jellyfish", S_EEL,  // 320
 	LVL(3, 3, 6, 0, 0), (G_GENO|G_NOGEN),
 	A(ATTK(AT_STNG, AD_DRST, 3, 3), NO_ATTK,
 	  NO_ATTK, NO_ATTK, NO_ATTK, NO_ATTK),
@@ -2819,7 +2819,7 @@ struct permonst _mons2[] = {
 	M1_SWIM|M1_AMPHIBIOUS|M1_ANIMAL|M1_SLITHY|M1_NOLIMBS|
 	  M1_CARNIVORE|M1_OVIPAROUS|M1_THICK_HIDE|M1_NOTAKE,
 	M2_HOSTILE, 0, CLR_GRAY),
-    MON("giant eel", S_EEL,
+    MON("giant eel", S_EEL,   // 323
 	LVL(5, 9, -1, 0, 0), (G_GENO|G_NOGEN),
 	A(ATTK(AT_BITE, AD_PHYS, 3, 6), ATTK(AT_TUCH, AD_WRAP, 0, 0),
 	  NO_ATTK, NO_ATTK, NO_ATTK, NO_ATTK),
